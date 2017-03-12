@@ -1,0 +1,12 @@
+let outerValue = 'ninja', later;
+function outerFunction() {
+	let innerVlue = 'samurai';
+	function innerFunction(paramsValue) {
+		console.log(outerValue,innerVlue,paramsValue,toolate);
+	};
+	later = innerFunction;
+};
+console.log('outer', toolate);
+let toolate = 'ronin';
+outerFunction();
+later('wakizashi'); 
